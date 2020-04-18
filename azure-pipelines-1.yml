@@ -24,6 +24,6 @@ stages:
       displayName: Build an image
       inputs:
         command: 'build'
-        Dockerfile: '/src/INgrok/Dockerfile'
+        Dockerfile: '**/Dockerfile'
         buildContext: '/src'
         tags: '$(tag)'
